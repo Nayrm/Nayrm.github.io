@@ -2,11 +2,58 @@
     <title>HTML5/CSS3 Responisve Image Slider</title>
     <style type="text/css">
     
-    #silder 
+    #slider {
+        overflow: hidden;
+    }
+
+    #slider figure {
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        animation: 20s slider infinite;
+    }
+
+    #silder figure img {
+        float: left;
+        width: 20%;
+    
+    }
+
+    @keyframes slider {
+        0% {
+            left: 0;
+        }
+        20% {
+            left: 0;
+        }
+        25% {
+            left: -100%;
+        }
+        45% {
+            left: -100%;
+        }
+        50% {
+            left: -200%;
+        }
+        70% {
+            left: -200%;
+        }
+        75% {
+            left: -300%;
+        }
+        95% {
+            left: -300%;
+        }
+        100% {
+            left: -400%;
+        }
+    }
+
     </style>
     </head>
     <body>
-    <h1>Hi</h1>
+    
     
         <div id="slider">
             <figure>
@@ -14,11 +61,8 @@
                 <img src="img/plant2.png">
                 <img src="img/plant3.png">
                 <img src="img/plant4.png">
+                <img src="img/plant3.png">
             </figure>
-               
-               
-            
-    
         </div>
     
     </body>    
